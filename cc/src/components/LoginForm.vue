@@ -12,10 +12,14 @@ export default {
 <template>
 <div class="login-form w-64 min-h-96 border-2 border-green-500 pb-12">
   <div class="sign-tab flex flex-row justify-around ">
-    <div @click="signingType = true" class="cursor-pointer hover:bg-slate-200 hover:text-green-300 w-full text-center p-2">
+    <div @click="signingType = true"
+      class="cursor-pointer hover:bg-slate-200 hover:text-green-300 w-full text-center p-2">
       Sign In
     </div>
-    <div @click="signingType = false" class="cursor-pointer hover:bg-slate-200 hover:text-green-300 w-full text-center p-2">
+    <div
+      @click="signingType = false"
+      class="cursor-pointer hover:bg-slate-200 hover:text-green-300 w-full text-center p-2"
+      >
       Sign Up
     </div>
   </div>
@@ -39,7 +43,7 @@ export default {
     <div v-if="signingType" class="flex text-xs mt-2 gap-1 mx-2 justify-around">
       <div class="flex">
         <input class="mr-1 accent-green-300" type="checkbox">
-        <p class="text-green-300">Remember me?</p> 
+        <p class="text-green-300">Remember me</p> 
       </div>
       <a class="underline" href="#">Forgot password</a>
     </div>
@@ -58,7 +62,6 @@ export default {
       <button class="bg-orange-400 active:bg-orange-300 w-52">
         {{ signingType ? "LOG IN" : "SIGN UP" }}
       </button>
-
     </div>
     <div class="flex flex-col text-center">
       <div class="flex row content-center justify-center align-middle">
