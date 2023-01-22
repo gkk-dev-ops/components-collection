@@ -4,6 +4,10 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +36,7 @@ jobs:
     steps:
     - uses: actions/download-artifact@master
       with:
-        name: page
+        name: artifact
         path: .
     - uses: actions/configure-pages@v1
     - uses: actions/upload-pages-artifact@v1
