@@ -28,11 +28,67 @@ export default {
         </GalleryItem>
 
         <GalleryItem
-            title="Lorem"
+            title="Credit Card Checkout"
             date="10 Mar 2016"
-            dailyUILink="https://example.com">
+            dailyUILink="https://uidesigndaily.com/posts/photoshop-credit-card-checkout-payment-day-2">
             <component :is="CreditCardCheckout"></component>
         </GalleryItem>
     
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
+        <GalleryItem
+            title="TODO"
+            date="TODO"
+            dailyUILink="https://example.com">
+            <component :is=""></component>
+        </GalleryItem>
+
     </div>
 </template>
