@@ -1,34 +1,46 @@
-name: Deploy Vue App CI
+name: Node.js CI
 on:
   push:
     branches: [ "master" ]
-
+  pull_request:
+    branches: [ "master" ]
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: 16
-    - run: npm install
-    - run: npm run build
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      if: ${{ success() && github.ref == 'refs/heads/master' }}
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - uses: actions/upload-artifact@v3
       with:
         path: dist/
-    - name: Deploy to GitHub Pages
-      id: deployment
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+    - uses: actions/download-artifact@master
+      with:
+        name: artifact
+        path: .
+    - uses: actions/configure-pages@v1
+    - uses: actions/upload-pages-artifact@v1
+      with:
+        path: .
+    - id: deployment
       uses: actions/deploy-pages@main
-      if: ${{ success() }}
