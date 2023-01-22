@@ -41,54 +41,5 @@ export default {
             <component :is=""></component>
         </GalleryItem>
 
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
-        <GalleryItem
-            title="TODO"
-            date="TODO"
-            dailyUILink="https://example.com">
-            <component :is=""></component>
-        </GalleryItem>
-
     </div>
 </template>
