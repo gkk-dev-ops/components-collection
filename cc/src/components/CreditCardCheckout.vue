@@ -9,6 +9,6 @@ export default {
 </script>
 <template>
     <div class="w-[968px] h-[600px] justify-center content-center bg-white flex flex-col">
-        
-    </div>
+		
+	</div>
 </template>
