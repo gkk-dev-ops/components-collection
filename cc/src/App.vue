@@ -19,7 +19,7 @@ export default {
 <template>
     <div class="app-wrapper flex flex-col gap-5 items-center">
         <h1 class="text-4xl mt-4">Daily UI components gallery</h1>
-        
+        <img class="w-32" src="/uiDesignDaily.png" alt="UI Design Daily changed logo">
         <GalleryItem
             title="Sign Up"
             date="10 Mar 2016"

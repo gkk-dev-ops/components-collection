@@ -27,17 +27,17 @@ export default {
   <div class="form-controls flex flex-col justify-center gap-4">
     <div class="flex flex-row mx-6 border-b-2 border-green-300 mt-5 p-1 content-center">
       <input class="rounded mr-2 w-40 p-0.5" type="text" placeholder="Username">
-      <img class="w-4 invert" src="/public/user-solid.svg" alt="user icon">
+      <img class="w-4 invert" src="/user-solid.svg" alt="user icon">
     </div>
 
     <div v-if="!signingType" class="flex flex-row mx-6 border-b-2 border-green-300 p-1 content-center">
       <input class="rounded mr-2 w-40 p-0.5" type="text" placeholder="Email">
-      <img class="w-4 invert" src="/public/envelope-regular.svg" alt="email icon">
+      <img class="w-4 invert" src="/envelope-regular.svg" alt="email icon">
     </div>
 
     <div class="flex flex-row mx-6 border-b-2 border-green-300 p-1">
       <input class="rounded mr-2 w-40 p-0.5" type="password" placeholder="Password">
-      <img class="w-4 invert" src="/public/lock-solid.svg" alt="lock icon">
+      <img class="w-4 invert" src="/lock-solid.svg" alt="lock icon">
     </div>
 
     <div v-if="signingType" class="flex text-xs mt-2 gap-1 mx-2 justify-around">
@@ -70,7 +70,7 @@ export default {
         <div class="w-8 h-0 border-[0.5px] border-green-500 mt-3"></div>
       </div>
       <div class="flex flex-row bg-blue-600 active:bg-blue-500 w-52 h-10 mx-auto mt-2 justify-around content-center">
-          <img src="/public/fb.png" alt="Facebook" class="w-6 h-6 mt-1.5">
+          <img src="/fb.png" alt="Facebook" class="w-6 h-6 mt-1.5">
         <button>
           {{`${signingType ? "Log In" : "Sign Up"} with Facebook`}}
         </button>
