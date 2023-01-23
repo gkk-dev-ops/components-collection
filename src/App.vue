@@ -2,13 +2,17 @@
 import GalleryItem from './components/GalleryItem.vue';
 import CreditCardCheckout from './components/CreditCardCheckout.vue';
 import LoginForm from './components/LoginForm.vue'
+import Calendar from './components/Calendar.vue';
+import MortgageCalculator from './components/MortgageCalculator.vue';
 
 export default {
   name: 'App',
   components: {
     GalleryItem,
     LoginForm,
-    CreditCardCheckout
+    CreditCardCheckout,
+    Calendar,
+    MortgageCalculator,
     },
 };
 </script>
@@ -30,7 +34,21 @@ export default {
             dailyUILink="https://uidesigndaily.com/posts/photoshop-credit-card-checkout-payment-day-2">
             <CreditCardCheckout/>
         </GalleryItem>
-    
+
+        <GalleryItem
+            title="Calendar"
+            date="12 Mar 2016"
+            dailyUILink="https://uidesigndaily.com/posts/photoshop-calendar-schedule-day-3">
+            <Calendar/>
+        </GalleryItem>
+
+        <GalleryItem
+            title="Mortgage Calculator"
+            date="14 Mar 2016"
+            dailyUILink="https://uidesigndaily.com/posts/photoshop-mortgage-calculator-payment-day-4">
+            <MortgageCalculator/>
+        </GalleryItem>
+
         <GalleryItem
             title="TODO"
             date="TODO"
