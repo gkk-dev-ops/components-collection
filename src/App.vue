@@ -1,18 +1,15 @@
 <script>
 import GalleryItem from './components/GalleryItem.vue';
-
 import CreditCardCheckout from './components/CreditCardCheckout.vue';
 import LoginForm from './components/LoginForm.vue'
 
 export default {
   name: 'App',
-  components: { GalleryItem, LoginForm, CreditCardCheckout },
-  data() {
-    return {
-        LoginForm: 'LoginForm',
-        CreditCardCheckout: 'CreditCardCheckout'
-    };
-  }
+  components: {
+    GalleryItem,
+    LoginForm,
+    CreditCardCheckout
+    },
 };
 </script>
 
@@ -24,21 +21,20 @@ export default {
             title="Sign Up"
             date="10 Mar 2016"
             dailyUILink="https://uidesigndaily.com/posts/photoshop-sign-up-authentication-day-1">
-            <component :is="LoginForm"></component>
+            <LoginForm/>
         </GalleryItem>
 
         <GalleryItem
             title="Credit Card Checkout"
             date="10 Mar 2016"
             dailyUILink="https://uidesigndaily.com/posts/photoshop-credit-card-checkout-payment-day-2">
-            <component :is="CreditCardCheckout"></component>
+            <CreditCardCheckout/>
         </GalleryItem>
     
         <GalleryItem
             title="TODO"
             date="TODO"
             dailyUILink="https://example.com">
-            <component :is=""></component>
         </GalleryItem>
 
     </div>

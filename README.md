@@ -4,7 +4,7 @@ Aim is to implement all designs from [Design daily](https://uidesigndaily.com/)
 
 ## Adding components
 To add new one to the gallery you need to go to the `/src/App.vue`
-register new component by appending `component` and `returned data`
+register new component by appending `component`.
 
 ```JS
 export default {
@@ -14,14 +14,7 @@ export default {
     LoginForm,
     CreditCardCheckout,
     yourComponentName
-    },
-  data() {
-    return {
-        LoginForm: 'LoginForm',
-        CreditCardCheckout: 'CreditCardCheckout',
-        yourComponentName: 'yourComponentName'
-    };
-  }
+    }
 };
 ```
 
@@ -31,6 +24,6 @@ Then push it to the gallery:
     title="yourComponentNameDesignDailyName"
     date="dateOfDesignCreation"
     dailyUILink="linkToComponentDesing">
-    <component :is="yourComponentName"></component>
+    <yourComponent/>
 </GalleryItem>
 ```
